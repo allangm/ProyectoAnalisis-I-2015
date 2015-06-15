@@ -1,30 +1,30 @@
 package com.soft.logistic.aquiros.logisticsoft;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class ClienteActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_cliente);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_cliente, menu);
         return true;
     }
 
-   @Override
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
@@ -39,23 +39,9 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-     public void toCliente(View View){
-        Intent pasador= new Intent(MainActivity.this, ClienteActivity.class);
-        startActivity(pasador);
-    }
+    public void addCliente(View v){
+        Intent temp=new Intent(ClienteActivity.this, MainActivity.class);
+        startActivity(temp);
 
-    public void toCamion(View View){
-        Intent pasador= new Intent(MainActivity.this, CamionActivity.class);
-        startActivity(pasador);
-    }
-
-    public void toPedido(View View){
-        Intent pasador= new Intent(MainActivity.this, PedidoActivity.class);
-        startActivity(pasador);
-    }
-
-    public void toEntrega(View View){
-        Intent pasador= new Intent(MainActivity.this, OrdenEntrega.class);
-        startActivity(pasador);
     }
 }

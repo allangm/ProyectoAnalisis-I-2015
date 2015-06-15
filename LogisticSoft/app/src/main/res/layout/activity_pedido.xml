@@ -4,7 +4,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.soft.logistic.aquiros.logisticsoft.Pedido">
+    tools:context="com.soft.logistic.aquiros.logisticsoft.PedidoActivity">
 
     <TextView android:text="Nuevo Pedido" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -131,7 +131,9 @@
                 android:layout_height="wrap_content"
                 android:text="Agregar"
                 android:id="@+id/button7"
-                android:layout_column="4" />
+                android:layout_column="4"
+                android:enabled="true"
+                android:clickable="true" />
 
         </TableRow>
 
@@ -158,7 +160,10 @@
                 android:layout_height="wrap_content"
                 android:text="Agregar Pedido"
                 android:id="@+id/button8"
-                android:layout_column="4" />
+                android:layout_column="4"
+                android:onClick="addPedido"
+                android:enabled="true"
+                android:clickable="true" />
         </TableRow>
 
         <TableRow
