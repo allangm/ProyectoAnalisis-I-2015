@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LogisticSoft</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="pedidos">Ingreso de pedidos</string>
+    <string name="titulo">Logistica</string>
+    <string name="cliente">Agregar Cliente</string>
+    <string name="pedido">Agregar Pedido</string>
+    <string name="title_activity_activity_cliente">ActivityCliente</string>
+    <string name="nuevoCliente">Nuevo Cliente</string>
+    <string name="nombre">Nombre</string>
+    <string name="title_activity_camion">camion</string>
+    <string name="title_activity_pedido">Pedido</string>
+    <string name="title_activity_cliente">Cliente</string>
+</resources>
